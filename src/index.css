@@ -1,0 +1,136 @@
+:root {
+    --dark-blue: #1b263b;
+    --card-blue: #2a415a;
+    --primary-blue: #007bff;
+    --light-text: #e0e0e0;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--dark-blue);
+    font-family: Arial, sans-serif;
+    color: var(--light-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.auth-card {
+    background-color: var(--card-blue);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+}
+
+.form-section h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.form-section p {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: var(--light-text);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--white);
+    color: #333;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--primary-blue);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.primary-btn {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+.link-text {
+    display: block;
+    margin-top: 20px;
+    color: var(--primary-blue);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.link-text:hover {
+    text-decoration: underline;
+}
+
+/* Role Selection Buttons */
+.role-selection {
+    display: flex;
+    background-color: #172a40;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.role-btn {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: var(--light-text);
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.role-btn.active {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
